@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: employee-master-service
+    
+
+security:
+  oauth2:
+    resource: 
+      user-info-uri: https://auth-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/service/user
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+        defaultZone: https://eureka-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/eureka/
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+    appname: employee-master-service
+    
+

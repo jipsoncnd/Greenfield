@@ -1,0 +1,31 @@
+-- Employee management API
+
+Download the code from git
+
+mvn clean install -DskipTests
+cf login -a api.sys.nonprod.apprd01.uk.hclcnlabs.com --skip-ssl-validation
+cf push -b java_buildpack_offline -f manifest.yml
+https://login.sys.nonprod.apprd01.uk.hclcnlabs.com
+
+1. Eureka 
+2. Config
+3. Auth
+4. Zuul
+5. Employee-inquiry
+6. Employee-Hierarchy - failed
+7. Employee-Details -failed
+8. 
+
+
+user1
+password1
+
+
+https://zuul-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/dashboard-feign/23232
+
+https://eureka-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/registry
+
+Architecture
+Execution
+Platform
+Benefits

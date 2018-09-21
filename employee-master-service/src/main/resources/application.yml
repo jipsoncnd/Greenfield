@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: employee-master-service
+
+
+security:
+  oauth2:
+    resource: 
+      user-info-uri: https://employee-auth-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/user
+      token-info-uri: https://employee-auth-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/oauth/check_token
+    client:
+      client-id: employeeapp
+      client-secret: pass
+ 
+     
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include:  "*"
+
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+        defaultZone: https://eureka-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/eureka/
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+    appname: employee-master-service
+    
+
+logging: 
+  level: 
+    org: 
+      springframework: DEBUG
+    com: DEBUG

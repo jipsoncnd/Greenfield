@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: employee-hierarchy-service
+  jpa: 
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  cloud:
+    config:
+      uri: https://cloud-config-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/
+  profiles:
+    active: prod
+    
+           
+security:
+  oauth2:
+    resource: 
+      user-info-uri: https://employee-auth-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/user
+      token-info-uri: https://employee-auth-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/oauth/check_token
+    client:
+      client-id: employeeapp
+      client-secret: pass
+      
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+        defaultZone: https://eureka-service-dev.apps.nonprod.apprd01.uk.hclcnlabs.com/eureka/
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+    appname: employee-hierarchy-service
+     
