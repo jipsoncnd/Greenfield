@@ -1,0 +1,3 @@
+com\example\employeeauthserver\config\EmployeeResourceServerConfiguration.class
+com\example\employeeauthserver\EmployeeAuthServerApplication.class
+com\example\employeeauthserver\config\EmployeeAuthServerConfiguration.class

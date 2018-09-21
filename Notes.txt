@@ -12,9 +12,10 @@ https://login.sys.nonprod.apprd01.uk.hclcnlabs.com
 3. Auth
 4. Zuul
 5. Employee-inquiry
-6. Employee-Hierarchy - failed
-7. Employee-Details -failed
-8. 
+6. employee-master-service
+7. Employee-Details
+8. Employee-Hierarchy
+9. 
 
 
 user1

@@ -1,0 +1,8 @@
+com\example\employeemaster\controller\EmployeeMasterController.class
+com\example\employeemaster\config\ManagerServiceProxy.class
+com\example\employeemaster\config\SwaggerConfig.class
+com\example\employeemaster\EmployeeMasterApplication.class
+com\example\employeemaster\model\Employee.class
+com\example\employeemaster\model\EmployeeInfo.class
+com\example\employeemaster\config\EmployeeMasterResourceServerConfiguration.class
+com\example\employeemaster\config\EmployeeServiceProxy.class

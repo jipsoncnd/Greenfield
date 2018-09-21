@@ -1,0 +1,7 @@
+com\example\employeeinquiryclient\model\Employee.class
+com\example\employeeinquiryclient\controller\EmployeeInquiryErrorController.class
+com\example\employeeinquiryclient\controller\ForbiddenException.class
+com\example\employeeinquiryclient\controller\AccessTokenBean.class
+com\example\employeeinquiryclient\controller\EmployeeInquiryController.class
+com\example\employeeinquiryclient\EmployeeInquiryApplication.class
+com\example\employeeinquiryclient\model\EmployeeInfo.class

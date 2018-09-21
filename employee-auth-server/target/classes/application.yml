@@ -1,0 +1,15 @@
+security:
+  oauth2:
+    client:
+      client-id: employeeapp
+      client-secret: pass
+      authorized-grant-types: authorization_code,refresh_token,password
+      scope: read
+    
+
+logging: 
+  level: 
+    org: 
+      springframework: TRACE
+    com: TRACE
+    
